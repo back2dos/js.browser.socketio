@@ -7,5 +7,6 @@
     "contributors": ["back2dos"],
     "version": "0.0.0",
     "tags": ["socketio"],
+    "classPath": "src",
     "dependencies": {}
 }
