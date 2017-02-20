@@ -1,12 +1,16 @@
 {
-    "name": "js.browser.socketio",
-    "url": "https://github.com/back2dos/js.browser.socketio",
-    "description": "Standalone externs for socketio in the browser",
-    "license": "MIT",
-    "releasenote": "Initial release",
-    "contributors": ["back2dos"],
-    "version": "0.0.0",
-    "tags": ["socketio"],
-    "classPath": "src",
-    "dependencies": {}
+	"name": "js.browser.socketio",
+	"license": "MIT",
+	"tags": [
+		"socketio"
+	],
+	"classPath": "src",
+	"description": "Standalone externs for socketio in the browser",
+	"contributors": [
+		"back2dos"
+	],
+	"releasenote": "Initial haxelib release.",
+	"version": "0.1.0",
+	"url": "https://github.com/back2dos/js.browser.socketio",
+	"dependencies": {}
 }
