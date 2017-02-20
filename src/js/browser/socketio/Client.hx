@@ -1,12 +1,9 @@
 package js.browser.socketio;
 
-@:build(util.NativeMap.build())
-abstract ClientOptions({
+typedef ClientOptions = {
   @:optional var multiplex : Bool;
-
-  @:native("force new connection")
-  @:optional var forceNewConnection : Bool;
-}){}
+  @:optional var forceNew : Bool;
+}
 
 @:native("io")
 extern

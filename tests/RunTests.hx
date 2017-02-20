@@ -1,5 +1,8 @@
 package ;
 
+import js.browser.SocketIO;
+import js.browser.socketio.Client;
+
 class RunTests {
 
   static function main() {

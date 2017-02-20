@@ -46,15 +46,6 @@ class Socket implements Dynamic extends js.browser.socketio.EventEmitter<Socket>
   public function packet(data : Dynamic) : Socket;
   public function disconnect() : Socket;
 
-  // from js.Node.NodeEventEmitter
-  public function addListener<T:Function>(event:Event<T>,fn:T):Dynamic;
-  public function on<T:Function>(event:Event<T>,fn:T):Dynamic;
-  public function once<T:Function>(event:Event<T>,fn:T):Void;
-  public function removeListener<T:Function>(event:Event<T>,listener:T):Void;
-  public function removeAllListeners<T:Function>(event:Event<T>):Void;
-  public function listeners<T:Function>(event:Event<T>):Array<T>;
-  public function setMaxListeners(m:Int):Void;
-  public function emit<T:Function>(event:Event<T>,args:haxe.extern.Rest<Dynamic>):Void;
 }
 
 /*extern
