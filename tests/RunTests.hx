@@ -1,6 +1,6 @@
 package ;
 
-import js.browser.SocketIO;
+import js.browser.SocketIo;
 import js.browser.socketio.Client;
 
 class RunTests {
