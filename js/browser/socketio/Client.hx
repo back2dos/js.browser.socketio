@@ -11,7 +11,7 @@ abstract ClientOptions({
 @:native("io")
 extern
 class Client 
-extends js.npm.socketio.Channel {
+extends EventEmitter<Client> {
   public function new(url : String, ?opts:ClientOptions ) : Void;
   public static var protocol(default,null) : String; 
 }

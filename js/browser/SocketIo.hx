@@ -1,12 +1,8 @@
 package js.browser;
 
-import js.npm.socketio.Listener;
-//import js.npm.socketio.Manager;
-//import js.npm.socketio.Socket;
-//import js.npm.socketio.Namespace;
-
-import js.node.events.EventEmitter.Event;
 import haxe.Constraints.Function;
+
+typedef Event<T> = String;
 
 @:native("io")
 extern
@@ -33,7 +29,7 @@ class SocketIo {
 }
 
 extern
-class Socket implements Dynamic{
+class Socket implements Dynamic extends js.browser.socketio.EventEmitter<Socket> {
   public static function Socket(options : Dynamic) : Void;
 
   public var connected : Bool;

@@ -1,13 +1,11 @@
 {
-    "name": "js-kit",
-    "url": "https://github.com/clemos/haxe-js-kit",
-    "description": "A Javascript/Node.js Toolkit for Haxe",
+    "name": "js.browser.socketio",
+    "url": "https://github.com/back2dos/js.browser.socketio",
+    "description": "Standalone externs for socketio in the browser",
     "license": "MIT",
     "releasenote": "Initial release",
-    "contributors": ["clemos","cloudshift","async-cl","dionjwa","Peekmo","andyli","slerdoze","nesbox","ccapndave","labe-me"],
-    "version": "0.0.3",
-    "tags": ["node", "nodejs", "js","express","mongoose","connect","socket","mongodb","mean"],
-    "dependencies": {
-        "hxnodejs":""
-    }
+    "contributors": ["back2dos"],
+    "version": "0.0.0",
+    "tags": ["socketio"],
+    "dependencies": {}
 }
