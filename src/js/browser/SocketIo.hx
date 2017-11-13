@@ -149,7 +149,6 @@ typedef ManagerOpts = {
     * @param latency (Number) number of ms elapsed since ping packet (i.e.: latency).
     */
   var Pong:SocketEvent<UInt->Void> = "pong";
-
 }
 
 typedef SocketError = Dynamic;
