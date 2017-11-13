@@ -55,7 +55,7 @@ class Flag {
 typedef ManagerOpts = {
   ?autoConnect: Bool, // by setting this false, you have to call manager.open whenever you decide it's appropriate
   ?multiplex: Bool,
-  ?parser: Parser // the parser to use. Defaults to an instance of the Parser that ships with socket.io. See socket.io-parser.
+  ?parser: Parser, // the parser to use. Defaults to an instance of the Parser that ships with socket.io. See socket.io-parser.
   ?path: String, // name of the path that is captured on the server side (/socket.io)
   ?query: String, // additional query parameters that are sent when connecting a namespace (then found in socket.handshake.query object on the server-side)
   ?randomizationFactor: Int, // (0.5), 0 <= randomizationFactor <= 1
