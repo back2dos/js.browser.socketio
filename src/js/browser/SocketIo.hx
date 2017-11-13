@@ -5,8 +5,7 @@ import haxe.Constraints.Function;
 typedef Event<T> = String;
 
 @:native("io")
-extern
-class SocketIo {
+extern class SocketIo {
 
   public static function connect(?url : String, ?opts : ManagerOpts) : Socket;
   public static var version : String;
@@ -28,8 +27,7 @@ class SocketIo {
 */
 }
 
-extern
-class Socket implements Dynamic extends js.browser.socketio.EventEmitter<Socket> {
+extern class Socket implements Dynamic extends js.browser.socketio.EventEmitter<Socket> {
   public static function Socket(options : Dynamic) : Void;
 
   public var connected : Bool;
@@ -63,7 +61,7 @@ typedef ManagerOpts = {
   ?transports: Array<String>
 }
 
-@:enum abstract SocketEvent<T>(String) {
+@:enum abstract SocketEvent<T:Function>(String) to js.browser.socketio.EventEmitter.Event<T> {
 
   /**
      * Fired upon a connection including a successful reconnection.
