@@ -20,3 +20,14 @@ install:
 
 script:
   - haxelib run travix js
+
+env:
+  - secure: "ynH5JTSaGnQZRF6NWNO++LQLGzsGmVoN7qbdz+CvP3HcUE7cQLtegMqvbhPsB13HKoTMzxk7Dln8hNl7B/++oH+GwaoKDlwfap7TXCAGTZjB6j1ukr7gBvU1DagY9AcC+HnnWayh172Q5GwGVIrq3+CyuwqryZm555OnZTq58dCRD+3kA9dBH7jAGNpmUrihRrvP3WPd85WmGJTE71ZTPkB+BzzQEKf8iMjqiz5Y8xFgNvOl99wuoWl8/3msnWk8IqFD/mJ7mMsi8912LM9vDIpEgaUtJRbWQ4tX/gWD0D6xATgyr/BBVemkj2WrEhszT7eVtardikhwAFCsiD1yrTno0sE/rh+hqT6lGH2u0JeqLk5A8u3ral0xW7oYZx8h+catphg7wf0Ia1UHhz6Ih/QiM/KkW8Hfzm5EdDLcK2gs34VffVs5yqSnJQU+G2bYgx5J3P/dnbfOh0lSsMR7/djuDTQhag2w8gGrzDjWEUtk1QTBpQgKXAPg68AvVHnozKZ3Ii64YlOLHES+Ie7wSL82QDoyr4jAP49uX07QuU0qB5ahRfG5wqSAEj9R394j4bAV9XPt7x02hNGLOVk3vgCV6Dk5alNMnFDmNGhGgvEKkuZrqWVuweRIokt7bPCLA5jUDhALTsAsqHaZ7jof1x8RlFykLa3tUhOTUQsDvq8="
+
+jobs:
+  include:
+    - stage: deploy
+      os: linux
+      haxe: "3.4.2"
+      script: skip
+      after_success: haxelib run travix release
