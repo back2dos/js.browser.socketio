@@ -1,8 +1,0 @@
--cp src
--debug
--D nodejs
--lib js-kit
--lib buddy
--main Main
---macro npm.Package.export("bin/package.json")
--js bin/test.js
